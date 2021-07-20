@@ -23,20 +23,23 @@ Estilos da index
 }
 
 #menu li{
-    display: inline-flex;
-    padding: 15px;  
+    display:inline;
+    padding: 10px;
 }
 #menu li a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
-}
-#menu li{
-    color: brown;
+    
 }
 #li3 {
+    outline-style: auto;
     position: absolute;
     right: 10%;
+}
+
+#li2 {
+    position: center;
+    right: 49.5%;
 }
 
 #menu li a:hover{
