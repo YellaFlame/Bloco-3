@@ -28,11 +28,10 @@ Estilos da index
 }
 #menu li a{
     text-decoration: none;
-    color: black;
+    color: rgb(3, 0, 0);
     
 }
 #li3 {
-    outline-style: auto;
     position: absolute;
     right: 10%;
 }

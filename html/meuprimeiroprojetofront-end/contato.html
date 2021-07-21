@@ -47,10 +47,10 @@
                 <div id="txtEmail"></div>
                 <br>
                 <label for="assunto"> Subject: </label> <br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
                 <div id = "txtAssunto"></div>
                 <br>
-                <button>Send Bro</button>
+                <button onclick="enviar()">Send Bro</button>
                 <br>
                 <br>
                 <img src="http://1.bp.blogspot.com/-QKwAuZLyT3g/U2piTGngWII/AAAAAAAAAcM/sHz7DnDS8Ic/s1600/J%C3%B3ia.jpg"
@@ -64,7 +64,7 @@
             <p>Dubai</p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.6509516108!2d54.94755498679835!3d25.07575945545691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20Emirados%20%C3%81rabes%20Unidos!5e0!3m2!1spt-BR!2sbr!4v1626794333938!5m2!1spt-BR!2sbr"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
 
         </div>
     </div>
