@@ -5,6 +5,10 @@ let nomeOk = false
 let cidadeOk = false
 let sobrenomeOk = false
 
+nome.style.width = "80%"
+sobrenome.style.width = "80%"
+cidade.style.width = "80%"
+
 function validaNome(){
     let txtNome = document.querySelector("#txtNome")
     if(nome.value.length< 3 ){
@@ -36,5 +40,13 @@ function validaCidade(){
         txtCidade.innerHTML = "Cidade Válida"
         txtCidade.style.color = "green"
         let cidadeOk = true
+    }
+}
+
+function enviar(){
+    if(nomeOk == true && sobrenomeOk == true && cidadeOk == true){
+        alert("Formulario enviado com sucesso!")
+    } else {
+        alert("Verificar se todos os campos foram preenchidos corretamnte...")
     }
 }
